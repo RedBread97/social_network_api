@@ -19,7 +19,7 @@ module.exports = {
                 username: req.body.username
             })
             .then((thought) => Users.findOneAndUpdate(
-                { _id: thought.username },
+                { _id: req.body.userId },
                 { $addToSet: { thoughts: thought._id } },
                 { runValidators: true, new: true }
             ))

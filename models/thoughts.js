@@ -2,7 +2,7 @@ const {Schema, model} = require('mongoose')
 const reactionSchema = require('./reactions')
 
 const thoughtsSchema = new Schema({
-    thoughtsText: {
+    thoughtText: {
         type: String,
         required: true,
         minLength: 1,
@@ -13,8 +13,8 @@ const thoughtsSchema = new Schema({
         default: Date.now, //how to set to current time?
 
     },
-    usernames: {
-        type: Schema.Types.ObjectId,
+    username: {
+        type: String,
         required: true,
         ref: 'users',
     },
