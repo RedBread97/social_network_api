@@ -17,12 +17,12 @@ const usersSchema = new Schema({
         },
         thoughts: [{
 
-                type: String,
+                type: Schema.Types.ObjectId,
                 ref: 'thoughts'
             }],
 
         friends: [{
-                type: String,
+                type: Schema.Types.ObjectId,
                 ref: 'users'
             }]
     });
