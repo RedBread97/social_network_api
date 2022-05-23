@@ -1,6 +1,5 @@
 const { ObjectId } = require('mongoose').Types;
-const req = require('express/lib/request');
-const res = require('express/lib/response');
+
 const { Users, Thoughts } = require('../models');
 module.exports = {
 

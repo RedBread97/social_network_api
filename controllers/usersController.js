@@ -1,5 +1,5 @@
 const { ObjectId } = require('mongoose').Types;
-const req = require('express/lib/request');
+
 const { Users, Thoughts } = require('../models');
 
 
